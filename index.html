@@ -32,7 +32,7 @@
 
 <body>
     <!-- Banner section -->
-    <section class="grid grid-cols-2 container mx-auto">
+    <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto">
         <div class="banner-left space-y-7.5">
             <h2 class="text-[80px] font-extrabold text-[#1C1C1C]">It's good <br>
                 tea time at The <br> Tea House</h2>
@@ -42,10 +42,21 @@
                 class="py-4.5 px-5 rounded-xl text-white text-xl font-bold bg-linear-to-r from-[#FF8938] to-[#FF0000]">Explore
                 More <span class="inline-block -rotate-45"><i class="fa-solid fa-arrow-right"></i></span></button>
         </div>
-        <div class="banner-right">
+
+        <div class="banner-right flex justify-end items-end relative">
             <img src="./images/banner.png" alt="">
+            <!-- Rating -->
+            <div
+                class="bg-white rounded-xl shadow- flex justify-center items-center gap-3 absolute left-45 bottom-3 py-4.5 px-6.5">
+                <img src="./images/star.png" alt="">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-[#1C1C1C]">5.00</h2>
+                    <p class="text-lg font-semibold text-[#777777]">Trust Pilot Ratings</p>
+                </div>
+            </div>
         </div>
     </section>
+
 </body>
 
 </html>
